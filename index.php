@@ -242,9 +242,15 @@ try {
                             </div>
                             <div class='p-3'>
                                 <p class='text-[#393939] font-semibold ps-0 text-justify'>$top_en</p> <br>
-                                <p class='ps-0 font-bold  text-right'>$dua_arabic</p> <br>
-                                <p class='text-[#393939] font-semibold ps-0 italic text-justify'><span class='font-bold'>Transliteration: </span>$transliteration_en</p> <br>
-                                <p class='font-semibold ps-0 text-gray-600 text-justify'><span class='font-bol'>Translation: </span>$translation_en</p> <br>
+                                <p class='ps-0 font-bold  text-right'>$dua_arabic</p> <br>";
+
+                                if($transliteration_en !== null){
+                                echo"<p class='text-[#393939] font-semibold ps-0 italic text-justify'><span class='font-bold'>Transliteration: </span>$transliteration_en</p> <br>";
+                                }
+                                if($transliteration_en !== null){
+                                echo"<p class='font-semibold ps-0 text-gray-600 text-justify'><span class='font-bol'>Translation: </span>$translation_en</p> <br>";
+                                }
+                                echo"
                             </div>
                             <div class='p-3'>
                                 <span class='text-[#1fa45b] font-bold pb-0'>Reference:</span>
